@@ -1,25 +1,27 @@
 # Ad-Performance-Analysis-Dashboard
 
 Ad Performance Analysis & Conversion Optimization: A Funnel Efficiency Deep Dive
-🚀 Project Overview
-This project focuses on a deep-dive analysis of Meta (Facebook/Instagram) advertising performance data to identify key areas of budget optimization and conversion strategy failure. By integrating data across campaigns, ad creatives, user demographics, and behavioral events, the goal was to pivot the marketing strategy from high-volume awareness to high-efficiency conversion.
-The analysis employed SQL-based validation checks and a Power BI dashboard to quantify efficiency losses in the mid-to-lower funnel, culminating in $500k in projected budget reallocation recommendations.
-🎯 Business Problem & Core Objectives
+🚀 **Project Overview**
+* This project focuses on a deep-dive analysis of Meta (Facebook/Instagram) advertising performance data to identify key areas of budget optimization and conversion strategy failure. 
+* By integrating data across campaigns, ad creatives, user demographics, and behavioral events, the goal was to pivot the marketing strategy from high-volume awareness to high-efficiency conversion.
+* The analysis employed SQL-based validation checks and a Power BI dashboard to quantify efficiency losses in the mid-to-lower funnel, culminating in $500k in projected budget reallocation recommendations.
+🎯 **Business Problem & Core Objectives**
 The campaign initially showed highly deceptive top-of-funnel metrics, masking severe conversion issues:
-Problem: The advertising strategy delivered a very high Click-Through Rate (CTR 11.76%) and Engagement Rate (13.56%), indicating excellent creative and targeting. However, this high engagement resulted in a low Purchase Rate (0.61%), signaling a massive "leaky funnel" problem between clicking the ad and completing the purchase.
-Objective 1 (Diagnosis): Pinpoint the exact audience segments, ad formats, and platforms responsible for the funnel leak.
-Objective 2 (Optimization): Provide data-driven, actionable recommendations to shift budget from underperforming segments to high-Converting segments to maximize Return on Ad Spend (ROAS).
-🛠️ Methodology & Technology Stack
+_Problem:_ The advertising strategy delivered a very high Click-Through Rate (CTR 11.76%) and Engagement Rate (13.56%), indicating excellent creative and targeting.
+However, this high engagement resulted in a low Purchase Rate (0.61%), signaling a massive "leaky funnel" problem between clicking the ad and completing the purchase.
+_Objective 1 (Diagnosis):_ Pinpoint the exact audience segments, ad formats, and platforms responsible for the funnel leak.
+_Objective 2 (Optimization):_ Provide data-driven, actionable recommendations to shift budget from underperforming segments to high-Converting segments to maximize Return on Ad Spend (ROAS).
+🛠️ **Methodology & Technology Stack**
 The project utilized a robust analytics workflow to ensure data integrity and reliable insights:
-Data Acquisition & Modeling: Loaded raw CSV datasets (ad_events, ads, users, campaigns) into a structured environment (simulated SQL/Python/Power BI Data Model) following a standard Star Schema with ad_events as the central fact table.
-SQL Validation: Developed 15 critical SQL queries to validate all major DAX measures and Power BI visualizations, including complex metrics like Cost Per Acquisition (CPA) and Purchase Rate segmented by Ad Type.
-Visual Analytics (Power BI): Developed a dynamic dashboard featuring time-based, demographic, geographic, and platform-specific views. Calculated fields (DAX) were used for all core KPIs (CTR, CR, ER, CPA).
-Insight Generation: Focused on comparative analysis (e.g., Facebook vs. Instagram, Video vs. Carousel) to isolate performance disparities.
-Key Technologies
-SQL (T-SQL/PostgreSQL syntax): Data cleaning, validation, and complex metric calculation.
-Power BI / DAX: Visualization, interactive dashboard design, and advanced calculated field creation.
-Data Modeling: Implementation of a Star Schema for efficient query performance.
-📊 Key Findings & Actionable Insights
+_Data Acquisition & Modeling:_ Loaded raw CSV datasets (ad_events, ads, users, campaigns) into a structured environment (simulated SQL/Python/Power BI Data Model) following a standard Star Schema with ad_events as the central fact table.
+_SQL Validation:_ Developed 15 critical SQL queries to validate all major DAX measures and Power BI visualizations, including complex metrics like Cost Per Acquisition (CPA) and Purchase Rate segmented by Ad Type.
+_Visual Analytics (Power BI):_ Developed a dynamic dashboard featuring time-based, demographic, geographic, and platform-specific views. Calculated fields (DAX) were used for all core KPIs (CTR, CR, ER, CPA).
+_Insight Generation:_ Focused on comparative analysis (e.g., Facebook vs. Instagram, Video vs. Carousel) to isolate performance disparities.
+**Key Technologies**
+_SQL (T-SQL/PostgreSQL syntax):_ Data cleaning, validation, and complex metric calculation.
+_Power BI / DAX:_ Visualization, interactive dashboard design, and advanced calculated field creation.
+_Data Modeling:_ Implementation of a Star Schema for efficient query performance.
+**📊 Key Findings & Actionable Insights**
 The analysis identified three immediate levers for conversion and efficiency improvement:
 1. Creative Format Dominance
 Finding: Video and Stories Ads consistently outperformed all other formats, yielding the highest Engagement Rate (13.7%) and Conversion Rate (5.2%).
@@ -44,8 +46,8 @@ Result: The findings led to a clear, data-backed plan to improve overall Purchas
 
 📊 Project Report: Ad Performance Analysis and Conversion Funnel Optimization
 1. Executive Summary
-This project analyzed a $2.5M digital advertising campaign to resolve a critical efficiency issue: a high Click-Through Rate (CTR 11.76%) that failed to translate into proportional purchases (Purchase Rate 0.61%). The core finding was a severe funnel leak post-engagement.
-The analysis, driven by SQL validation and Power BI visualization, isolated underperforming ad formats and misaligned geographic targeting. The resulting strategic recommendations led to a projected $500,000 increase in budget efficiency by pivoting investment to high-converting segments.
+* This project analyzed a $2.5M digital advertising campaign to resolve a critical efficiency issue: a high Click-Through Rate (CTR 11.76%) that failed to translate into proportional purchases (Purchase Rate 0.61%). The core finding was a severe funnel leak post-engagement.
+* The analysis, driven by SQL validation and Power BI visualization, isolated underperforming ad formats and misaligned geographic targeting. The resulting strategic recommendations led to a projected $500,000 increase in budget efficiency by pivoting investment to high-converting segments.
 2. Business Context & Problem Statement
 2.1 The Challenge: The Leaky Funnel
 The campaign's success was initially measured by strong top-of-funnel metrics, specifically:
